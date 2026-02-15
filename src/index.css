@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply transition-colors duration-300 antialiased text-left;
+  }
+
+  /* Strictly disable text justification as it creates uneven spacing */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  div {
+    text-justify: auto;
+    text-align: left;
+  }
+}
+
+.font-dyslexic {
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+.theme-sepia {
+  background-color: #f4ecd8;
+  color: #5b4636;
+}
